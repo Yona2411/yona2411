@@ -26,3 +26,4 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npx markdown-link-check readme.md
+    - run: npx cspell --show-suggestions --config .github/workflows/cspell.json readme.md
